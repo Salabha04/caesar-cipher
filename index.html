@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔐 Caesar Cipher</h1>
+        <p>Encrypt and decrypt your messages!</p>
+
+        <label for="message">Enter your message:</label>
+        <textarea id="message" placeholder="Type your message here..."></textarea>
+         <button id="swapBtn" class="clear">Use Result as Input</button>
+        <label for="shift">Choose shift value:</label>
+       <div class="shift-control">
+    <input type="range" id="shiftSlider" min="0" max="25" value="3">
+    <span id="shiftValue">3</span>
+</div>
+
+<input type="number" id="shift" value="3" min="0" max="25">
+
+        <div class="buttons">
+            <button id="encryptBtn">Encrypt</button>
+            <button id="decryptBtn">Decrypt</button>
+        </div>
+
+<label for="result">Result:</label>
+<textarea id="result" readonly
+    placeholder="Your result appears here..."></textarea>
+
+<div class="buttons">
+    <button id="copyBtn">Copy Result</button>
+    <button id="clearBtn" class="clear">Clear</button>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
